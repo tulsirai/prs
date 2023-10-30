@@ -28,7 +28,7 @@ jobs:
         with:
           aws-region: us-east-1
           role-to-assume: GitHubActionsRole
-          role-session-name: GithubActionsSession
+          role-session-name: arn:aws:iam::033124427758:role/GitHubActionsRole
 
       - name: npm ci
         run: npm ci
